@@ -16,53 +16,98 @@
 
     <!-- styles -->
     <style>
+        :root {
+            --black-tone-color: #282726;
+            --red-tone-color: #a7414a;
+            --green-tone-color: #6a8a82;
+            --yellow-tone-color: #a37c27;
+            --brown-tone-color: #563838;
+            --white-color: #ffffff;
+            --black-color: #000000;
+        }
+
         body {
-            /* background-color: #563838; */
+            background-color: var(--brown-tone-color)
         }
 
         .about-external-ctn {
-            border: 1px solid orange;
+            /* border: 1px solid orange; */
             font-family: 'Slabo 27px', serif;
-            /* color: white; */
+            color: var(--white-color);
 
         }
 
         .about-row {
-            border: 1px solid green;
+            /* border: 1px solid black; */
             padding: 1rem;
         }
 
         .about-history,
         .about-team {
-            border: 1px solid blue;
-            text-align: center;
+            /* border: 1px solid blue; */
+            /* text-align: center; */
             padding: 2rem;
         }
 
         .about-history-pic {
-            border: 1px solid red;
-            /* padding: 2rem; */
+            /* border: 1px solid red; */
+            margin-top: 2rem;
         }
+
+
 
         .about-history-pic>img {
-            border: 1px solid black;
-            width: 10rem;
-            border-radius: 5rem;
+            /* border: 1px solid var(--white-color); */
+            width: 14rem;
+            border-radius: 7rem;
+            opacity: 0.8;
         }
 
+        .about-history-pic>img:hover {
+            opacity: 1;
+        }
+
+
+
         .about-history-text {
-            text-align: center;
+            /* text-align: center; */
         }
 
         .about-team-pic {
-            border: 1px solid violet;
+            /* border: 1px solid violet; */
+            margin-top: 2rem;
+            /* margin-bottom: 2rem; */
             /* padding: 2rem; */
+
         }
 
-        .about-team-pic>img {
-            border: 1px solid black;
-            width: 8rem;
+        .about-team-pic>p {
+            font-size: 0.8rem;
+
+        }
+
+        .about-team-pic-box {
+            border: 2px solid var(--yellow-tone-color);
             border-radius: 0.5rem;
+            position: relative;
+            margin: auto;
+            overflow: hidden;
+            width: 8rem;
+
+        }
+
+        .about-team-pic-box>img {
+            max-width: 100%;
+            transition: all 0.3s;
+            display: block;
+            width: 100%;
+            height: auto;
+            transform: scale(1);
+
+        }
+
+        .about-team-pic-box>img:hover {
+            transform: scale(1.2);
         }
     </style>
 </head>
@@ -74,58 +119,74 @@
         <div class="row about-row">
 
             <!-- beginning of Our History Section -->
-            <div class="about-history col-md-6 col-sm-12">
+            <div class="about-history col-md-6 col-sm-12 text-center">
                 <h3>Our History</h3><br>
                 <div class="about-history-pic">
-                    <img src="./about-us-images/profile-picture-use.jpg" alt="">
+                    <img src="./about-us-images/aboutus-img-history4.jpeg" alt="">
                 </div><br>
-                <div class="about-history-text">
+                <div class="about-history-text text-center">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum expedita libero voluptatibus.
-                        Reprehenderit asperiores officiis dolore exercitationem enim eaque voluptatem. Lorem ipsum dolor
+                        Reprehenderit asperiores officiis dolore exercitationem enim eaque voluptatem. Lorem ipsum
+                        dolor
                         sit amet consectetur adipisicing elit. Architecto, praesentium!
 
                     </p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure eveniet quasi, ab reprehenderit
-                        reiciendis officiis magnam eligendi distinctio repellat error illo, iste molestiae labore illum
-                        non asperiores minima nam laudantium? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        reiciendis officiis magnam eligendi distinctio repellat error illo, iste molestiae labore
+                        illum
+                        non asperiores minima nam laudantium? Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit.
                         Deleniti, aliquam!</p>
                 </div>
             </div>
             <!-- end of Our History Section -->
 
             <!-- beginning of Our Team Section -->
-            <div class="container about-team col-md-6 col-sm-12">
+            <div class="container about-team col-md-6 col-sm-12 text-center">
                 <h3>Our Team</h3><br>
-                <div class="row about-team-row">
-                    <div class="about-team-pic col-lg-4 col-md-6 col-sm-12">
-                        <img src="./about-us-images/profile-picture-use.jpg" alt="team-member-img">
-                        <p>Name member Team</p>
+                <div class="row about-team-row ">
+                    <div class="about-team-pic col-lg-4 col-md-6 col-sm-12 ">
+                        <div class="about-team-pic-box">
+                            <img src="./about-us-images/about-us-mech3.jpeg" alt="team-member-img">
+                        </div>
+                        <p>Name member Team <br> member position</p>
                     </div>
-                    <div class="about-team-pic col-lg-4 col-md-6 col-sm-12">
-                        <img src="./about-us-images/profile-picture-use.jpg" alt="team-member-img">
-                        <p>Name member Team</p>
+                    <div class="about-team-pic col-lg-4 col-md-6 col-sm-12 ">
+                        <div class="about-team-pic-box">
+                            <img src="./about-us-images/about-us-mech4.jpeg" alt="team-member-img">
+                        </div>
+                        <p>Name member Team <br> member position</p>
                     </div>
-                    <div class="about-team-pic col-lg-4 col-md-6 col-sm-12">
-                        <img src="./about-us-images/profile-picture-use.jpg" alt="team-member-img">
-                        <p>Name member Team</p>
+                    <div class="about-team-pic col-lg-4 col-md-6 col-sm-12 ">
+                        <div class="about-team-pic-box">
+                            <img src="./about-us-images/about-us-mech5.jpeg" alt="team-member-img">
+                        </div>
+                        <p>Name member Team <br> member position</p>
                     </div>
-                    <div class="about-team-pic col-lg-4 col-md-6 col-sm-12">
-                        <img src="./about-us-images/profile-picture-use.jpg" alt="team-member-img">
-                        <p>Name member Team</p>
+                    <div class="about-team-pic col-lg-4 col-md-6 col-sm-12 ">
+                        <div class="about-team-pic-box">
+                            <img src="./about-us-images/about-us-mech6.jpeg" alt="team-member-img">
+                        </div>
+                        <p>Name member Team <br> member position</p>
                     </div>
-                    <div class="about-team-pic col-lg-4 col-md-6 col-sm-12">
-                        <img src="./about-us-images/profile-picture-use.jpg" alt="team-member-img">
-                        <p>Name member Team</p>
+                    <div class="about-team-pic col-lg-4 col-md-6 col-sm-12 ">
+                        <div class="about-team-pic-box">
+                            <img src="./about-us-images/about-us-mech1.jpeg" alt="team-member-img">
+                        </div>
+                        <p>Name member Team <br> member position</p>
                     </div>
-                    <div class="about-team-pic col-lg-4 col-md-6 col-sm-12">
-                        <img src="./about-us-images/profile-picture-use.jpg" alt="team-member-img">
-                        <p>Name member Team</p>
+                    <div class="about-team-pic col-lg-4 col-md-6 col-sm-12 ">
+                        <div class="about-team-pic-box">
+                            <img src="./about-us-images/about-us-mech2.jpeg" alt="team-member-img">
+                        </div>
+                        <p>Name member Team <br> member position</p>
                     </div>
+
 
 
                 </div>
             </div>
-            <!-- beginning of Our Team Section -->
+            <!-- End of Our Team Section -->
 
 
         </div>
