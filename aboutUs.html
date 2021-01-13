@@ -31,71 +31,30 @@
         }
 
         .about-external-ctn {
-            /* border: 1px solid orange; */
             font-family: 'Slabo 27px', serif;
             color: var(--white-color);
-
         }
-
-        .about-row {
-            /* border: 1px solid black; */
-            padding: 1rem;
-        }
-
-        .about-history,
-        .about-team {
-            /* border: 1px solid blue; */
-            /* text-align: center; */
-            padding: 2rem;
-        }
-
-        .about-history-pic {
-            /* border: 1px solid red; */
-            margin-top: 2rem;
-        }
-
-
 
         .about-history-pic>img {
-            /* border: 1px solid var(--white-color); */
-            width: 14rem;
+            width: 15rem;
             border-radius: 7rem;
-            opacity: 0.8;
+            opacity: 0.7;
         }
 
         .about-history-pic>img:hover {
             opacity: 1;
         }
 
-
-
-        .about-history-text {
-            /* text-align: center; */
-        }
-
-        .about-team-pic {
-            /* border: 1px solid violet; */
-            margin-top: 2rem;
-            /* margin-bottom: 2rem; */
-            /* padding: 2rem; */
-
-        }
-
-        .about-team-pic>p {
-            font-size: 0.8rem;
-
-        }
-
+        /* about us - team image zoom in effect */
         .about-team-pic-box {
-            border: 2px solid var(--yellow-tone-color);
+            border: 1px solid var(--black-tone-color);
             border-radius: 0.5rem;
             position: relative;
             margin: auto;
             overflow: hidden;
-            width: 8rem;
-
         }
 
+        /* about us - team image zoom in effect */
         .about-team-pic-box>img {
             max-width: 100%;
             transition: all 0.3s;
@@ -103,9 +62,9 @@
             width: 100%;
             height: auto;
             transform: scale(1);
-
         }
 
+        /* about us - team image zoom in effect */
         .about-team-pic-box>img:hover {
             transform: scale(1.2);
         }
@@ -114,15 +73,16 @@
 
 <body>
 
+    <!-- navbar space -->
+
+    <!-- beginning of mainly container -->
     <div class="container about-external-ctn">
-
         <div class="row about-row">
-
             <!-- beginning of Our History Section -->
-            <div class="about-history col-md-6 col-sm-12 text-center">
-                <h3>Our History</h3><br>
-                <div class="about-history-pic">
-                    <img src="./about-us-images/aboutus-img-history4.jpeg" alt="">
+            <div class="about-history col-md-6 col-sm-12 text-center p-5">
+                <h2>Our History</h2><br>
+                <div class="about-history-pic mt-4">
+                    <img class="img-fluid" src="./about-us-images/aboutus-img-history4.jpeg" alt="">
                 </div><br>
                 <div class="about-history-text text-center">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum expedita libero voluptatibus.
@@ -142,57 +102,54 @@
             <!-- end of Our History Section -->
 
             <!-- beginning of Our Team Section -->
-            <div class="container about-team col-md-6 col-sm-12 text-center">
-                <h3>Our Team</h3><br>
+            <div class="container about-team col-md-6 col-sm-12 text-center p-5">
+                <h2>Our Team</h2><br>
                 <div class="row about-team-row ">
-                    <div class="about-team-pic col-lg-4 col-md-6 col-sm-12 ">
+                    <div class="about-team-pic col-lg-4 col-md-6 col-sm-12 mt-4">
                         <div class="about-team-pic-box">
-                            <img src="./about-us-images/about-us-mech3.jpeg" alt="team-member-img">
+                            <img class="img-fluid" src="./about-us-images/about-us-mech3.jpeg" alt="team-member-img">
                         </div>
-                        <p>Name member Team <br> member position</p>
+                        <p>John Doe <br> Owner and Mechanic</p>
                     </div>
-                    <div class="about-team-pic col-lg-4 col-md-6 col-sm-12 ">
+                    <div class="about-team-pic col-lg-4 col-md-6 col-sm-12 mt-4">
                         <div class="about-team-pic-box">
-                            <img src="./about-us-images/about-us-mech4.jpeg" alt="team-member-img">
+                            <img class="img-fluid" src="./about-us-images/about-us-mech4.jpeg" alt="team-member-img">
                         </div>
-                        <p>Name member Team <br> member position</p>
+                        <p>Rodney Torres <br> Automotive Technician</p>
                     </div>
-                    <div class="about-team-pic col-lg-4 col-md-6 col-sm-12 ">
+                    <div class="about-team-pic col-lg-4 col-md-6 col-sm-12 mt-4">
                         <div class="about-team-pic-box">
-                            <img src="./about-us-images/about-us-mech5.jpeg" alt="team-member-img">
+                            <img class="img-fluid" src="./about-us-images/about-us-mech5.jpeg" alt="team-member-img">
                         </div>
-                        <p>Name member Team <br> member position</p>
+                        <p>Arron Hill <br> Mechanic</p>
                     </div>
-                    <div class="about-team-pic col-lg-4 col-md-6 col-sm-12 ">
+                    <div class="about-team-pic col-lg-4 col-md-6 col-sm-12 mt-4">
                         <div class="about-team-pic-box">
-                            <img src="./about-us-images/about-us-mech6.jpeg" alt="team-member-img">
+                            <img class="img-fluid" src="./about-us-images/about-us-mech6.jpeg" alt="team-member-img">
                         </div>
-                        <p>Name member Team <br> member position</p>
+                        <p>Kaid Bell <br> Electromechanic</p>
                     </div>
-                    <div class="about-team-pic col-lg-4 col-md-6 col-sm-12 ">
+                    <div class="about-team-pic col-lg-4 col-md-6 col-sm-12 mt-4">
                         <div class="about-team-pic-box">
-                            <img src="./about-us-images/about-us-mech1.jpeg" alt="team-member-img">
+                            <img class="img-fluid" src="./about-us-images/about-us-mech1.jpeg" alt="team-member-img">
                         </div>
-                        <p>Name member Team <br> member position</p>
+                        <p>Faith Butler <br> Industrial Mechanic</p>
                     </div>
-                    <div class="about-team-pic col-lg-4 col-md-6 col-sm-12 ">
+                    <div class="about-team-pic col-lg-4 col-md-6 col-sm-12 mt-4">
                         <div class="about-team-pic-box">
-                            <img src="./about-us-images/about-us-mech2.jpeg" alt="team-member-img">
+                            <img class="img-fluid" src="./about-us-images/about-us-mech2.jpeg" alt="team-member-img">
                         </div>
-                        <p>Name member Team <br> member position</p>
+                        <p>Sandy Edwards <br> Intern</p>
                     </div>
-
-
-
                 </div>
             </div>
             <!-- End of Our Team Section -->
-
-
         </div>
     </div>
+    <!-- end of mainly container -->
 
-    <!-- ----------------------------------------------------------------------------     -->
+    <!-- footer space -->
+
     <!-- js -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
         integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
