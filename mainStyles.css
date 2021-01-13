@@ -1,0 +1,57 @@
+:root {
+    --black-tone-color: #282726;
+    --red-tone-color: #a7414a;
+    --green-tone-color: #6a8a82;
+    --yellow-tone-color: #a37c27;
+    --brown-tone-color: #563838;
+    --white-color: #ffffff;
+    --black-color: #000000;
+}
+body{
+    color:var(--white-color);
+    font-family: 'Slabo 27px', serif;
+    background: var(--brown-tone-color);
+}
+.bgGreen{
+    background-color:var(--green-tone-color);
+}
+.disabled{
+    color: var(--black-tone-color) !important;
+}
+@media only screen and (min-width: 767.98px) {
+    .disabled{
+        border: 2px solid var(--black-tone-color);
+        border-radius: 10%;
+    }
+    .navLogo{
+        max-width: 100px;
+    }
+
+}
+@media only screen and (max-width: 767.98px) {
+
+    .navLogo{
+        max-width: 75px;
+    }
+}
+.nav-item :hover{
+    color:var(--red-tone-color) !important;
+    
+}
+.homeContainer{
+    height:80% ;
+}
+#homeBgImage::after{
+    content: "";
+    background: url("autoShopFront.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat:no-repeat;
+    opacity: .7;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    z-index: -1; 
+}
