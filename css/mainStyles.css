@@ -69,6 +69,21 @@ body{
 }
 footer{
     bottom: 0;
+    
+}
+@media only screen and (min-height: 800px) and (min-width:1400px) {
+.workFooter{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+}
+@media only screen and (min-height: 750px) and (min-width:1200px) {
+    .aboutFooter{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
 }
 footer p{
     display: block;
