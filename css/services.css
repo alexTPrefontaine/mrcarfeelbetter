@@ -1,10 +1,13 @@
 .space{
     max-width: 1900px;
     margin: auto;
-    height:700px;
+    height: 100hv;
 }
 .space2{
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 22px;
+    margin-bottom: 60px;
     padding: 20px;
     font-size: .8em;
     box-shadow: 5px 10px 3px #00000050;
@@ -20,13 +23,13 @@
 }
 .t5{
     margin-top: 7px;
+    
 }
 .mt28{
     margin-top: -5px;
 }
 
 p{
-
     display: inline-block;
     text-align: center;  
     width: 400px;
@@ -92,6 +95,10 @@ body{
     font-family: 'Slabo 27px', serif;
     color: rgb(212, 212, 212);
 }
+h1{
+    margin-top: 23px;
+    color: white;
+}
 .redf{
     color:#A7414A!important;
 }
@@ -133,4 +140,23 @@ body{
     margin-left: -3px;
     margin-right: 2px;
     padding: 0;
+}
+h5{
+    color:#6A8A82;
+}
+.pad0{
+    height: 100px;
+}
+.ma1{
+    margin-top: 5px;
+}
+
+
+@media (max-width: 395px) { 
+
+    .space2 {
+        padding-right: 0px!important;
+        padding-left: 0px!important;
+    }
+
 }

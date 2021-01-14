@@ -1,13 +1,16 @@
 .space{
     max-width: 1200px;
     margin: auto;
-    height:700px;
+    min-height: 100vh;
 }
 .space2{
     margin: auto;
     padding: 20px;
     font-size: .8em;
     box-shadow: 5px 10px 3px #00000050;
+    height: 100%;
+    margin-top: 22px;
+    margin-bottom: 60px;
 }
 .images{
     display: inline-block;
@@ -20,23 +23,28 @@
 }
 .t5{
     margin-top: 10px;
+    float : right;
 }
 .mt28{
     margin-top: 38px;
+    height: 450px;
+}
+.w114{
+    width:140px;
 }
 p{
-
     display: inline-block;
     text-align: center;  
-    width: 400px;
+    width: 380px;
 }
 label{
     margin: 2.5px 2.5px;
 }
 .textB{
-    float: right;
+    float: right!important;
     height: 25px;
-    width: 194px;
+    max-width: 160px;
+    margin-top: 5px;
 }
 .buttonW{
     background-color: #A37C27;
@@ -89,7 +97,7 @@ label{
 }
 body{
     font-family: 'Slabo 27px', serif;
-    color: rgb(255, 255, 255);
+    color: rgb(212, 212, 212);
 }
 .redf{
     color:#A7414A;
@@ -122,3 +130,33 @@ body{
     background-color:#563838;
 }
 
+@media (max-width: 459px) { 
+    .leftLine{
+        height: 60px;
+    }
+    .textB{
+        margin-left: 15px;
+        margin-top: 0px;
+    }
+    .space2{
+        height:1100px
+    }
+    .hei2{
+        margin-top:-100px;
+    }
+}
+@media (max-width: 364px) { 
+
+    .space2 {
+        padding-right: 0px;
+    }
+    .hei{
+        font-size: 10px;
+    }
+    .t5{
+        margin-top: 13px;
+    }
+}
+h1{
+    margin-top: 22px;
+}
