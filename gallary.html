@@ -2,99 +2,164 @@
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Here are a few examples of what Mr Car Feelbetter can do for you.">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Here are a few examples of what Mr Car Feelbetter can do for you.">
 
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/mainStyles.css">
-    <title>Gallery</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/mainStyles.css">
 
-    <style>
-        .pic-4 {
-            width: 450px;
-            height: 350px;
-        }
-    </style>
+  <!--Slick CSS-->
+
+  <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+  <!--// Add the new slick-theme.css if you want the default styling-->
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+
+  <style>
+    .gallery_images {
+      padding: 50px 0px;
+      align-self: center;
+    }
+  </style>
+
+  <title>Gallery</title>
+
 </head>
 
 <body>
-    <!-- Nav bar-->
-    <nav class="navbar navbar-expand-lg navbar-dark bgGreen">
-        <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#carNav" aria-controls="carNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <a class="navbar-brand" href="index.html"><div class="navLogo pl-2"><img src="images/MrCarFeelBetter-logo.png" alt="Logo" class="navLogo d-none d-sm-block"></div></a>
-          <div class="collapse navbar-collapse" id="carNav">
-            <ul class="navbar-nav ms-auto me-2 mb-2 mb-lg-0 fs-5">
-              <li class="nav-item">
-                <a class="nav-link  text-center text-light" href="index.html" >Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-center text-light" href="aboutUs.html">About us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-center text-light" href="howItWorks.html">How it Works</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-center text-light" href="service.html" >Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-center text-light disabled" href="#" tabindex="-1" aria-disabled="true" >Gallery</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-center text-light" href="Quotation.html" >Quotation</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-center text-light" href="contact.html" >Contact</a>
-              </li>
-            </ul>
+  <!-- Nav bar-->
+  <nav class="navbar navbar-expand-lg navbar-dark bgGreen">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#carNav"
+        aria-controls="carNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">
+        <div class="navLogo pl-2"><img src="images/MrCarFeelBetter-logo.png" alt="Logo"
+            class="navLogo d-none d-sm-block"></div>
+      </a>
+      <div class="collapse navbar-collapse" id="carNav">
+        <ul class="navbar-nav ms-auto me-2 mb-2 mb-lg-0 fs-5">
+          <li class="nav-item">
+            <a class="nav-link  text-center text-light" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-center text-light" href="aboutUs.html">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-center text-light" href="howItWorks.html">How it Works</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-center text-light" href="service.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-center text-light disabled" href="#" tabindex="-1" aria-disabled="true">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-center text-light" href="Quotation.html">Quotation</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-center text-light" href="contact.html">Contact</a>
+          </li>
+        </ul>
 
-          </div>
-        </div>
-    </nav>
-    <!--End of nav-->
-    <div class="container body">
-
-
-        <!--Gallery details-->
-        <div>
-            <div class="row mt-4 mb-3">
-                <div class="col-12 col-sm-10 offset-sm-2">
-                    <H1>Gallery</H1>
-                    <h3>Here are a few examples of what Mr Car Feelbetter can do for you.</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col col-sm-10 offset-sm-2">
-                    <div class="col-4 mb-4">
-                        <img src="images/gallery.jpg" Class="pic-4" alt="Image of car repair">
-                    </div>
-                    <div class="col-4 mb-4">
-                        <img src="images/gallery.jpg" Class="pic-4" alt="Image of car repair">
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-    </div>
-    <footer class="bgGreen mb-0">
-      <div class="text-center fs-3">
-        <i class="fab fa-instagram m-2"></i>
-        <i class="fab fa-facebook-square m-2"></i>
-        <i class="fab fa-youtube m-2"></i>
       </div>
+    </div>
+  </nav>
+  <!--End of nav-->
+  <div class="container body">
+
+
+    <!--Gallery details-->
+    <div>
+      <div class="row mt-4 mb-3">
+        <div class="col">
+          <H1>Gallery</H1>
+          <h3>Here are a few examples of what Mr Car Feelbetter can do for you.</h3>
+        </div>
+      </div>
+
+      <div class="row mt-4 mb-3">
+        <div class="gallery_images">
+          <div><img src="images/gallery_img1.jpg" alt="Image of car repair"></div>
+          <div><img src="images/gallery_img2.jpg" alt="Image of car repair"></div>
+          <div><img src="images/gallery_img3.jpg" alt="Image of car repair"></div>
+          <div><img src="images/gallery_img4.jpg" alt="Image of car repair"></div>
+          <div><img src="images/gallery_img5.jpg" alt="Image of car repair"></div>
+          <div><img src="images/gallery_img6.jpg" alt="Image of car repair"></div>
+          <div><img src="images/gallery_img7.jpg" alt="Image of car repair"></div>
+          <div><img src="images/gallery_img8.jpg" alt="Image of car repair"></div>
+
+        </div>
+      </div>
+<<<<<<< Updated upstream
       <p class="text-center mb-0 pb-2">CarRepair 2021 all rights reserved &copy;</p>
     </footer>
     <!--Font Awesome-->
     <script src="https://kit.fontawesome.com/dc733b1296.js" crossorigin="anonymous"></script>
  <!--Bootstrap-->
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+=======
+
+
+    </div>
+  </div>
+  <footer class="bgGreen mb-0">
+    <div class="text-center fs-3">
+      <i class="fab fa-instagram m-2"></i>
+      <i class="fab fa-facebook-square m-2"></i>
+      <i class="fab fa-youtube m-2"></i>
+    </div>
+    <p class="text-center mb-0 pb-2">CarRepair 2021 all rights reserved &copy</p>
+  </footer>
+  <!--Font Awesome-->
+  <script src="https://kit.fontawesome.com/dc733b1296.js" crossorigin="anonymous"></script>
+  <!--Bootstrap-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
+
+  <!--Slick.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $(".gallery_images").slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        responsive: [
+          {
+            breakpoint: 1200,
+            settings: {
+              arrows: true,
+              centerMode: false,
+              centerPadding: '40px',
+              slidesToShow: 2
+            }
+          },
+          {
+            breakpoint: 770,
+            settings: {
+              arrows: false,
+              centerMode: false,
+              centerPadding: '40px',
+              slidesToShow: 1
+            }
+          }
+        ]
+      });
+    });
+  </script>
+
+>>>>>>> Stashed changes
 </body>
 
 </html>
