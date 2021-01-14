@@ -55,11 +55,11 @@ body{
 
 #homeBgImage::after{
     content: "";
-    background: url("autoShopFront.jpg");
+    background: url("/images/autoShopFront.jpg");
     background-position: center;
     background-size: cover;
     background-repeat:no-repeat;
-    opacity: .7;
+    opacity: .5;
     top: 0;
     left: 0;
     bottom: 0;
