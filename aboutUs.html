@@ -15,6 +15,7 @@
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
     <!-- styles -->
+    <link rel="stylesheet" href="mainStyles.css">
     <style>
         :root {
             --black-tone-color: #282726;
@@ -26,9 +27,7 @@
             --black-color: #000000;
         }
 
-        body {
-            background-color: var(--brown-tone-color)
-        }
+
 
         .about-external-ctn {
             font-family: 'Slabo 27px', serif;
@@ -74,7 +73,40 @@
 <body>
 
     <!-- navbar space -->
+    <nav class="navbar navbar-expand-lg navbar-dark bgGreen">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#carNav" aria-controls="carNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="index.html"><div class="navLogo pl-2"><img src="MrCarFeelBetter-logo.png" alt="Logo" class="navLogo d-none d-sm-block"></div></a>
+          <div class="collapse navbar-collapse" id="carNav">
+            <ul class="navbar-nav ms-auto me-2 mb-2 mb-lg-0 fs-5">
+              <li class="nav-item">
+                <a class="nav-link  text-center text-light " href="index.html" >Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-center disabled text-light" href="#" tabindex="-1" aria-disabled="true">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-center text-light" href="howItWorks.html">How it Works</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-center text-light" href="service.html" >Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-center text-light" href="gallary.html">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-center text-light" href="Quotation.html" >Quotation</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-center text-light" href="contact.html" >Contact</a>
+              </li>
+            </ul>
 
+          </div>
+        </div>
+    </nav>
     <!-- beginning of mainly container -->
     <div class="container about-external-ctn">
         <div class="row about-row">
@@ -149,7 +181,16 @@
     <!-- end of mainly container -->
 
     <!-- footer space -->
-
+    <footer class="bgGreen mb-0">
+        <div class="text-center fs-3">
+          <i class="fab fa-instagram m-2"></i>
+          <i class="fab fa-facebook-square m-2"></i>
+          <i class="fab fa-youtube m-2"></i>
+        </div>
+        <p class="text-center mb-0 pb-2">CarRepair 2021 all rights reserved &copy</p>
+      </footer>
+          <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/dc733b1296.js" crossorigin="anonymous"></script>
     <!-- js -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
         integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
