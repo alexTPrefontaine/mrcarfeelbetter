@@ -55,7 +55,7 @@ body{
 
 #homeBgImage::after{
     content: "";
-    background: url("/images/autoShopFront.jpg");
+    background: url("../images/autoShopFront.jpg");
     background-position: center;
     background-size: cover;
     background-repeat:no-repeat;
